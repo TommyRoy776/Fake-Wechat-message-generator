@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  /*background:linear-gradient(to right top,#65dfc9,#6cdbeb);*/
+  height: 100%;
+  background-color: inherit;
 }
 
 .App-logo {
@@ -35,4 +38,269 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.preview{
+  /*float: left;*/
+  height: 70vh;
+  width: 40vw;
+}
+
+.title{
+  border-bottom: solid;
+  border-top: solid;
+  color: #fff;
+}
+
+.toolbar{
+  /*float: left;*/
+  height: 70vh;
+  width: 40vw;
+}
+
+.grid{
+  display: inline-block;
+}
+
+.wechat{
+  background-color: rgb(235 ,235,235);
+  width: 60%;
+  height: 85%;
+  margin: auto;
+  display: block;
+  box-sizing: border-box;
+  position: relative;
+}
+
+@media only screen and (max-width: 1200px) {
+  .wechat{
+    width: 95%;
+    min-width: 350px;
+  }
+}
+
+.wechatinput{
+  display: block;
+  margin: 20px auto;
+  border:none;
+  font-size: 1.25rem;
+  /*position: relative;*/
+
+}
+
+.wechatinput:focus{
+  outline:none
+}
+
+.chat-content{
+  display: block;
+  position: relative;
+  width: 100%;
+  overflow: auto;
+  height: 84%;
+}
+
+.chat-header{
+  display: block;
+  position: relative;
+  top:0;
+  width: 100%;
+  height: 7%;
+  background-color: inherit;
+  overflow: hidden;
+}
+
+.recipient{
+  float: left;
+  margin-left:10px;
+  margin-top:10px;
+}
+
+.recipient::after{
+  content:".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.dots{
+  float: right;
+  font-size: 2rem;
+  margin-right: 10px;
+}
+
+.dots::after{
+  content:".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.recipient .name{
+  font-size: 1.25rem;
+  font-family: Microsoft JhengHei;
+  font-weight: bold;
+  position: relative;
+  bottom: 2px;
+  display: inline-block;
+}
+
+.chatMessage-right .dialogue{
+  /*min-height: 50px;*/
+  position: relative;
+  display: table;
+  text-align: center;
+  border-radius: 7px;
+  background-color:#9EEA6A;
+  box-sizing: border-box;
+  max-width: 70%;
+}
+
+.chatMessage-left .dialogue{
+  position: relative;
+  display: table;
+  text-align: center;
+  border-radius: 7px;
+  background-color:#fff;
+  box-sizing: border-box;
+  max-width: 70%;
+
+}
+
+
+.chatMessage-left .dialogue::before{
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  border: 16px solid transparent;
+  position: absolute;
+  top: 11px;
+  border-right: 16px solid #fff;
+  left: -32px;
+}
+
+.chatMessage-right .dialogue::after{
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  border: 16px solid transparent;
+  position: absolute;
+  top: 11px;
+  border-left: 16px solid #9EEA6A;
+  right: -32px;
+}
+
+.dialogue>p{
+  word-break: break-all;
+  padding: 5px;
+  text-align: left;
+}
+
+.chatMessage{
+  width: 100%;
+  display: flex;
+  margin-top: 8px;
+
+}
+.chatMessage .cancel{
+  display: none;
+}
+.chatMessage:hover .cancel{
+   display: block;
+}
+
+
+.chatMessage .avatar{
+  top: 10px;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  margin: 0 20px;
+}
+
+/*.chatMessage::after{
+  content: "";
+  display: block;
+	background-image: url('./component/img/default-user.png');
+	background-repeat: no-repeat;
+	background-size: 30px 30px;  
+   width: 30px;
+  height: 30px;
+  box-sizing: border-box;
+  position: relative;
+}*/
+
+/*.chatMessage > img{
+   height: 60px;
+   width: 60px;
+   border-radius:16px;
+  float: right;
+}*/
+
+.chatMessage-right{
+  flex-direction: row-reverse;
+}
+
+.chatMessage-left{
+
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  height: 9%;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  background-color: #f5f5f7;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .icon {
+  width: 28px;
+  height: 28px;
+  margin-left: 10px;
+}
+
+
+footer .icon:last-child {
+  margin-right: 10px;
+}
+
+footer .text-input{
+  flex: 1;
+  margin-left: 10px;
+  height: 30px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background: #f5f5f5;
+  font-size: 1.25rem;
+}
+
+footer .icon-voice {
+  background-image: url('./component/img/voice.svg');
+}
+
+footer .icon-plus {
+  background-image: url('./component/img/plus-cycle.svg');
+}
+
+footer .icon-face{
+  background-image: url('./component/img/smile-face.svg');
+}
+
+.icon {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.message-date{
+  color: rgb(156, 156, 156);
 }
