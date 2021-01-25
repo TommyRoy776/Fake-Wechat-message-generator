@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.4858a45e.chunk.css",
+    "main.js": "/static/js/main.dfffd908.chunk.js",
+    "main.js.map": "/static/js/main.dfffd908.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.6fc3e27e.js",
+    "runtime-main.js.map": "/static/js/runtime-main.6fc3e27e.js.map",
+    "static/js/2.e6e60268.chunk.js": "/static/js/2.e6e60268.chunk.js",
+    "static/js/2.e6e60268.chunk.js.map": "/static/js/2.e6e60268.chunk.js.map",
+    "static/js/3.9b28fa97.chunk.js": "/static/js/3.9b28fa97.chunk.js",
+    "static/js/3.9b28fa97.chunk.js.map": "/static/js/3.9b28fa97.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.4858a45e.chunk.css.map": "/static/css/main.4858a45e.chunk.css.map",
+    "static/js/2.e6e60268.chunk.js.LICENSE.txt": "/static/js/2.e6e60268.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/static/media/bgimg.f6f55608.jpg",
+    "static/media/default-user.94cf7531.png": "/static/media/default-user.94cf7531.png",
+    "static/media/App.css": "/static/media/voice.1ea364b2.svg",
+    "static/media/wechat-footer-image.8ca3528e.webp": "/static/media/wechat-footer-image.8ca3528e.webp"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6fc3e27e.js",
+    "static/js/2.e6e60268.chunk.js",
+    "static/css/main.4858a45e.chunk.css",
+    "static/js/main.dfffd908.chunk.js"
+  ]
+}
