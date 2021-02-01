@@ -1,6 +1,8 @@
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a side project of web development.To make a web app that generate a picture of WeChat message. Users can 
+customize their dialogues.     
 ![alt text](https://raw.githubusercontent.com/TommyRoy776/Fake-Wechat-message-generator/master/example.png)
 
 ## Available Scripts
